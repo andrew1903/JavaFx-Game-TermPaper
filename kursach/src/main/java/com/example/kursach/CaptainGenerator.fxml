@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.CaptainGeneratorController">
+   <children>
+      <Label layoutX="35.0" layoutY="33.0" text="Оберіть трьох капітанів">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fCaptain" layoutX="35.0" layoutY="188.0" prefWidth="150.0" />
+      <ComboBox fx:id="sCaptain" layoutX="225.0" layoutY="188.0" prefWidth="150.0" />
+      <ComboBox fx:id="tCaptain" layoutX="409.0" layoutY="188.0" prefWidth="150.0" />
+      <Label layoutX="35.0" layoutY="157.0" text="Перший" />
+      <Label layoutX="229.0" layoutY="157.0" text="Другий" />
+      <Label layoutX="411.0" layoutY="157.0" text="Третій" />
+      <Button fx:id="create" layoutX="409.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#run" text="Ok">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="create1" layoutX="495.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#closeWindow" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

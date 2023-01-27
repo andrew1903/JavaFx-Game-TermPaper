@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="2080.0" maxWidth="2480.0" minHeight="768.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0">
+        <content>
+          <AnchorPane layoutY="760.0" minHeight="768.0" minWidth="1366.0" />
+        </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="208.0" layoutX="1099.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="248.0" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="5.0" layoutY="30.0" prefHeight="150.0" prefWidth="300.0" style="-fx-padding: 20; -fx-background-color: lightgrey; -fx-background-radius: 10; -fx-opacity: 0.8;">
+         <children>
+            <Label id="redTeam" style="-fx-opacity: 1;" textFill="#0017ff">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label id="bluePoints" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label id="blueTeam" textFill="#0017ff">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label id="redPoints" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <MenuBar prefHeight="25.0" prefWidth="1368.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Save " />
+                  <MenuItem mnemonicParsing="false" text="Open Save" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Insert menu" />
+                  <MenuItem mnemonicParsing="false" text="Info" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
